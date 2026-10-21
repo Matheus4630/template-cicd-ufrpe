@@ -27,4 +27,4 @@ jobs:
             docker build -t imagem-$NOME_DO_CONTAINER .
             docker stop $NOME_DO_CONTAINER || true
             docker rm $NOME_DO_CONTAINER || true
-            docker run -d --name $NOME_DO_CONTAINER -p $PORTA_EXTERNA:8093 imagem-$NOME_DO_CONTAINER
+            docker run -d --name $NOME_DO_CONTAINER -p $PORTA_EXTERNA:8080 imagem-$NOME_DO_CONTAINER
